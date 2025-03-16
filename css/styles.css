@@ -382,3 +382,21 @@ footer {
     background: #34495e;
     transform: translateY(-3px);
 }
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-logo {
+    height: 40px;
+    width: auto;
+    border-radius: 100%;
+}
+
+@media (max-width: 768px) {
+    .brand-logo {
+        height: 30px;
+    }
+}
