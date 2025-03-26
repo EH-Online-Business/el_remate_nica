@@ -1,28 +1,20 @@
 // Sample products data
 const products = [
     {
-        name: 'Producto 1',
-        price: '$99.99',
-        image: './images/product1.jpg',
-        description: 'Descripción del producto 1'
+        name: 'product1',
+        image: './images/product1.png',
     },
     {
-        name: 'Producto 2',
-        price: '$149.99',
-        image: './images/product2.jpg',
-        description: 'Descripción del producto 2'
+        name: 'product1',
+        image: './images/product2.png',
     },
     {
-        name: 'Producto 3',
-        price: '$179.99',
-        image: './images/product3.jpg',
-        description: 'Descripción del producto 3'
+        name: 'product1',
+        image: './images/product3.png',
     },
     {
-        name: 'Producto 4',
-        price: '$109.99',
-        image: './images/product4.jpg',
-        description: 'Descripción del producto 4'
+        name: 'product1',
+        image: './images/product4.png',
     }
 ];
 
@@ -37,9 +29,6 @@ function loadProducts() {
             <img src="${product.image}" alt="${product.name}" loading="lazy" 
                  onerror="this.src='./images/Placeholder.svg'" 
                  style="width: 100%; height: auto;">
-            <h3>${product.name}</h3>
-            <p>${product.description}</p>
-            <span class="price">${product.price}</span>
         `;
         productsGrid.appendChild(productCard);
     });
